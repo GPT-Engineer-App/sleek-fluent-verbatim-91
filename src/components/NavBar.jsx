@@ -7,18 +7,18 @@ function NavBar() {
   const textColor = useColorModeValue("black", "white");
 
   return (
-    <Flex bg={bgColor} color={textColor} p={4} justifyContent="space-between">
+    <Flex bg="transparent" color="white" p={4} justifyContent="space-between">
       <Text fontSize="lg" fontWeight="bold" backdropFilter="blur(10px)">
-        My Website
+        Verbatim
       </Text>
       <Box>
-        <Link px={2} href="/">
+        <Link px={4} href="/" fontSize="lg">
           Home
         </Link>
-        <Link px={2} href="/about">
+        <Link px={4} href="/about" fontSize="lg">
           About
         </Link>
-        <Link px={2} href="/contact">
+        <Link px={4} href="/contact" fontSize="lg">
           Contact
         </Link>
         <Switch isChecked={colorMode === "dark"} onChange={toggleColorMode} />
