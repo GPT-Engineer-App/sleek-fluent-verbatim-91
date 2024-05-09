@@ -17,15 +17,29 @@ const Index = () => {
             <Text fontSize="xl" color={color} textAlign="center">
               Connect, share, and engage on the next-gen social platform.
             </Text>
-            <Button leftIcon={<FaUserFriends />} colorScheme="purple" variant="solid" size="lg">
+            <Button colorScheme="purple" variant="solid" size="lg">
               Join Now
             </Button>
-            <Button leftIcon={<FaRocket />} colorScheme="orange" variant="outline" size="lg">
+            <Button colorScheme="orange" variant="outline" size="lg">
               Learn More
             </Button>
           </VStack>
         </Box>
       </VStack>
+      <Box width="100%" p={5} color="white" bg="gray.800">
+        <VStack spacing={3}>
+          <Text fontSize="lg">Quick Links</Text>
+          <Button variant="link" colorScheme="teal">
+            Privacy Policy
+          </Button>
+          <Button variant="link" colorScheme="teal">
+            Terms of Service
+          </Button>
+          <Button variant="link" colorScheme="teal">
+            Contact Us
+          </Button>
+        </VStack>
+      </Box>
     </Container>
   );
 };
